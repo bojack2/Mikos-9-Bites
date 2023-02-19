@@ -1,0 +1,124 @@
+.root{
+	-fx-background-color: #f8eee4;
+	-fx-background-size: cover;
+	-fx-background-insets: 0;
+}
+.label{
+	-fx-font-family:'Teko', sans-serif;
+	-fx-font-size: 16;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+}
+
+.text-field {
+	-fx-font-family:'Teko', sans-serif;
+	-fx-font-size: 16;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+    -fx-background-color: #a9a9a9 , black , black;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+.button{
+	-fx-transition: 3s;
+    -fx-background-color: #f8eee4;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-font-family:'Teko', sans-serif;
+	-fx-font-size: 16;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+	-fx-background-color: #e4f8ee;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+}
+.label{
+	-fx-font-family:'Teko', sans-serif;
+	-fx-font-size: 16;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+}
+.scroll-pane {
+    -fx-background-color: #f8eee4;
+}
+.scroll-pane > .viewport {
+   -fx-background-color: #f8eee4;
+}
+.menubuttons > .button {
+ 	-fx-background-color: black;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+.menubuttons > .button:hover{
+	-fx-background-color: #e4f8ee;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+}
+.menubuttons > .button:pressed{
+	-fx-background-color: #e4f8ee;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+	-fx-rotate: 10;
+}
+.WindowButtons > .button {
+ 	-fx-background-color: black;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+.WindowButtons > .button:hover{
+	-fx-background-color: #e4f8ee;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+}
+.WindowButtons2 > .button {
+	-fx-font-size: 18;
+ 	-fx-background-color: black;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+.WindowButtons2 > .button:hover{
+	-fx-background-color: #e4f8ee;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+}
+#redButton {
+	-fx-background-color: #E91919;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+#redButton:hover{
+	-fx-background-color: #e4f8ee;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+}
+#greenButton {
+	-fx-background-color: green;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+#greenButton:hover{
+	-fx-background-color: #e4f8ee;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+}
+#addToBasketButton {
+	-fx-background-color: green;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+#addToBasketButton:hover{
+	-fx-background-color: #e4f8ee;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+}
+.tooltip {
+    -fx-font-family:'Teko', sans-serif;
+	-fx-font-size: 14;
+}
