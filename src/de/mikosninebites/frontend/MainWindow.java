@@ -19,10 +19,7 @@ import javafx.stage.Stage;
 /**
  * This class represents the main window of the application. It contains the
  * layout and controls for the user interface of the application, including a
- * menu bar, product panels, and a shopping cart panel. The MainWindow class
- * extends the BorderPane class, which provides a layout pane for arranging
- * child nodes in the top, left, right, bottom, and center positions. The center
- * position is used to display the product panels and the shopping cart panel.
+ * menu bar, product panels and a shopping cart panel.
  * 
  * @author mikolaj korzeniewski (github: bojack2)
  */
@@ -31,9 +28,11 @@ public class MainWindow extends Application {
 	/* An array of buttons representing the main menu options */
 	private Button[] menuButtons = { new Button("FAVS ♥"), new Button("BURGERS"), new Button("PIZZAS"),
 			new Button("HOT DOGS"), new Button("DRINKS") };
+
 	/* An array of buttons representing the individual products in the menu */
 	private Button[] productButtons = { new Button(""), new Button(""), new Button(""), new Button(""), new Button(""),
 			new Button(""), new Button(""), new Button(""), new Button("") };
+
 	/* A button used to cancel an order */
 	private Button cancelButton = new Button("CANCEL");
 
@@ -52,10 +51,14 @@ public class MainWindow extends Application {
 	/* A BorderPane used as the main layout for the restaurant window */
 	private BorderPane borderPaneForMainWindow = new BorderPane();
 
-	/* A list of integers representing the indices of the user's favourite products */
+	/*
+	 * A list of integers representing the indices of the user's favourite products
+	 */
 	private List<Integer> drawnNumbersForFavourites = new ArrayList<>();
 
-	/* An instance of MenuButtonEvents, a custom class used to handle button events */
+	/*
+	 * An instance of MenuButtonEvents, a custom class used to handle button events
+	 */
 	private MenuButtonEvents menuButtonEvents;
 
 	/* A list of integers representing the quantity of each selected product */
@@ -77,7 +80,7 @@ public class MainWindow extends Application {
 	private Stage primaryStage;
 
 	/* The main scene of the restaurant window */
-	private Scene restaurantMainScene = new Scene(borderPaneForMainWindow, 600, 900);
+	private Scene restaurantMainScene;
 
 	/**
 	 * Overrides the start method of the Application class and creates the main
@@ -93,7 +96,7 @@ public class MainWindow extends Application {
 		this.primaryStage = primaryStage;
 		this.menuButtonEvents = new MenuButtonEvents(this);
 
-		// Create the list of drawn numbers for favourites, the menu bar, middle panel,
+		// Create the list of drawn numbers for favourites, the menu bar, middle panel
 		// and bottom panel
 		RandomFavouriteNumbers randomFavouriteNumbers = new RandomFavouriteNumbers();
 		drawnNumbersForFavourites = randomFavouriteNumbers.createFavouritesNumberList();
@@ -105,6 +108,9 @@ public class MainWindow extends Application {
 		primaryStage.setTitle("Miko's 9 Bites");
 		primaryStage.setResizable(false);
 
+		// Initializes a scene
+		restaurantMainScene = new Scene(borderPaneForMainWindow, 600, 900);
+
 		// Add the stylesheets to the restaurant main scene
 		restaurantMainScene.getStylesheets().add("file:resources/style.css");
 		restaurantMainScene.getStylesheets().add("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
@@ -112,6 +118,7 @@ public class MainWindow extends Application {
 		// Set the scene of the primary stage and show it
 		primaryStage.setScene(restaurantMainScene);
 		primaryStage.show();
+
 	}
 
 	/**
@@ -138,7 +145,8 @@ public class MainWindow extends Application {
 		for (HBox allProductRows : productRows) {
 			allProductRows.setAlignment(Pos.CENTER);
 
-			menuButtonEvents.addEventToMenuBarButtons(menuButtons, borderPaneForMainWindow, productButtons, productRows);
+			menuButtonEvents.addEventToMenuBarButtons(menuButtons, borderPaneForMainWindow, productButtons,
+					productRows);
 		}
 	}
 
@@ -149,8 +157,7 @@ public class MainWindow extends Application {
 	 */
 	public void createMiddlePanel() {
 
-		CentralPanel centralPanel = new CentralPanel(productButtons, productRows,
-				drawnNumbersForFavourites);
+		CentralPanel centralPanel = new CentralPanel(productButtons, productRows, drawnNumbersForFavourites);
 		VBox centralPanelVbox = centralPanel.createPanelWithFavourites();
 
 		menuButtonEvents.addEventToProductButtonsForFavourites(productButtons);

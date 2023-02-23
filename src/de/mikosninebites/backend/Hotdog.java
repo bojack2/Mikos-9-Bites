@@ -1,11 +1,13 @@
 package de.mikosninebites.backend;
 
 /**
- * This is a class named "Hotdog" that defines a drink's attributes such as name, price and content of hotdog. 
+ * This is a class named "Hotdog" that defines a hotdog's attributes such as
+ * name, price and content.
+ * 
  * @author mikolaj korzeniewski (github: bojack2)
  *
  */
-public class Hotdog implements FoodInterface{
+public class Hotdog implements FoodInterface {
 
 	/* variable that stores the name of the hotdog */
 	private String name;
@@ -80,10 +82,11 @@ public class Hotdog implements FoodInterface{
 	}
 
 	/**
-	 * This is a method that checks if a food item contains gluten by examining its
-	 * name. If the name contains the words "vegan" or "veggie", the method assumes
-	 * that the food item is free from gluten and returns false. Otherwise, it
-	 * returns true indicating that the food item may contain gluten.
+	 * 
+	 * Checks if the hotdog is gluten-free by examining its name. If the name
+	 * contains "Vegan" or "Veggie", the hotdog is considered gluten-free.
+	 * 
+	 * @return true if the hotdog is gluten-free, false otherwise.
 	 */
 	@Override
 	public boolean isGlutenfree() {

@@ -15,9 +15,9 @@ import javafx.scene.layout.HBox;
 /**
  * PayWindow class is responsible for creating and displaying the pay window on
  * the main window. This class creates the top panel with the company logo, the
- * central panel with the order details, and the bottom panel with the
- * navigation buttons. It also adds events to the navigation buttons for
- * navigation to other screens.
+ * central panel with the order details and the bottom panel with the navigation
+ * buttons. It also adds events to the navigation buttons for navigation to
+ * other screens.
  * 
  * @author mikolaj korzeniewski (github: bojack2)
  *
@@ -44,9 +44,9 @@ public class PayWindow {
 
 	/*
 	 * The method showPayWindow() creates the top panel with the company logo, the
-	 * central panel with the order details, and the bottom panel with the
-	 * navigation buttons. It also adds events to the navigation buttons for
-	 * navigation to other screens.
+	 * central panel with the order details and the bottom panel with the navigation
+	 * buttons. It also adds events to the navigation buttons for navigation to
+	 * other screens.
 	 */
 	public void showPayWindow() {
 

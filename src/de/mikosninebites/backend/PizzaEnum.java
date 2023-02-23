@@ -2,16 +2,17 @@ package de.mikosninebites.backend;
 
 /**
  * PizzaEnum that represents various types of pizzas, each with a name, price,
- * content, and image path. Each type of pizza is defined as a constant in
- * all-caps with the corresponding values for its name, price, content, and
- * image path passed as parameters to the constructor. The constructor sets the
- * values of the instance variables for each constant. The enum also provides
- * getter methods for the name, price, content, and image path of each pizza.
+ * content and image path. Each type of pizza is defined as a constant in
+ * all-caps with the corresponding values for its name, price, content and image
+ * path passed as parameters to the constructor. The constructor sets the values
+ * of the instance variables for each constant. The enum also provides getter
+ * methods for the name, price, content and image path of each pizza.
  * 
  * @author mikolaj korzeniewski (github: bojack2)
  *
  */
 public enum PizzaEnum {
+
 	PIZZA_MARGHERITA("Margherita Pizza", 8.99, "tomatoes, mozzarella cheese, basil",
 			"file:resources/icons/pizza_margherita.png"),
 
@@ -41,16 +42,16 @@ public enum PizzaEnum {
 			"tomato sauce, mozzarella cheese, pepperoni, ham, bacon, sausage, onion, pepper, mushrooms and olives",
 			"file:resources/icons/pizza_supreme.png");
 
-	/* each pizza's name */
+	/* Each pizza's name */
 	private final String name;
 
-	/* each pizza's price */
+	/* Each pizza's price */
 	private final double price;
 
-	/* each pizza's content */
+	/* Each pizza's content */
 	private final String content;
 
-	/* each pizza's image path */
+	/* Each pizza's image path */
 	private final String imagePath;
 
 	/**

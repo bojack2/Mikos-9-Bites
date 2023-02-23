@@ -1,21 +1,21 @@
 package de.mikosninebites.backend;
 
 /**
- * This is a class named "Pizza" that defines a drink's attributes such as name,
- * price and content of pizza.
+ * This is a class named "Pizza" that defines a pizza's attributes such as name,
+ * price and content.
  * 
  * @author mikolaj korzeniewski (github: bojack2)
  *
  */
-public class Pizza implements FoodInterface{
+public class Pizza implements FoodInterface {
 
-	/* variable that stores the name of the pizza */
+	/* Variable that stores the name of the pizza */
 	private String name;
 
-	/* variable that stores the price of the pizza */
+	/* Variable that stores the price of the pizza */
 	private double price;
 
-	/* variable that stores the content of the pizza */
+	/* Variable that stores the content of the pizza */
 	private String content;
 
 	/**
@@ -39,7 +39,7 @@ public class Pizza implements FoodInterface{
 	/**
 	 * Sets pizza's name
 	 * 
-	 * @param name - pizza's name
+	 * @param name - pizza's name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
@@ -82,10 +82,11 @@ public class Pizza implements FoodInterface{
 	}
 
 	/**
-	 * This is a method that checks if a food item contains gluten by examining its
-	 * name. If the name contains the words "vegan" or "veggie", the method assumes
-	 * that the food item is free from gluten and returns false. Otherwise, it
-	 * returns true indicating that the food item may contain gluten.
+	 * 
+	 * Checks if the pizza is gluten-free by examining its name. If the name
+	 * contains "Vegan" or "Veggie", the pizza is considered gluten-free.
+	 * 
+	 * @return true if the pizza is gluten-free, false otherwise.
 	 */
 	@Override
 	public boolean isGlutenfree() {

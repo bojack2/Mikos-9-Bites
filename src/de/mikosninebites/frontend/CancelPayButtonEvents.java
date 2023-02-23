@@ -30,8 +30,7 @@ public class CancelPayButtonEvents {
 	}
 
 	/**
-	 * Adds event listeners to the "cancel" button and "to order" button using
-	 * lambda expressions.
+	 * Adds event listeners to the "cancel" button and "to order" button.
 	 */
 	public void addEventToButtons() {
 
@@ -46,7 +45,7 @@ public class CancelPayButtonEvents {
 			mainWindow.getPayBox().setVisible(false);
 		});
 
-		// sets the event handler for the "to order" button. When the button is clicked,
+		// Sets the event handler for the "to order" button. When the button is clicked,
 		// the method creates an instance of "PayWindow" and calls its "showPayWindow()"
 		// method to display the payment window.
 		mainWindow.getToOrderButton().setOnAction(click -> {

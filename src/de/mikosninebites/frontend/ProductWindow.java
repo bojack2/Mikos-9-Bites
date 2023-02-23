@@ -18,7 +18,7 @@ import javafx.stage.Stage;
  * The ProductWindow class is responsible for creating a new window that shows
  * the product's details when a user clicks on the product in the main window.
  * The class contains methods for creating and adding products to the VBox
- * object, adding content to the product, and adding events to the buttons.
+ * object, adding content to the product and adding events to the buttons.
  * 
  * @author mikolaj korzeniewski (github: bojack2)
  *
@@ -56,7 +56,7 @@ public class ProductWindow {
 	}
 
 	/**
-	 * Displays a product window for a given product with its name, price, content,
+	 * Displays a product window for a given product with its name, price, content
 	 * and image path.
 	 * 
 	 * @param productName      - The name of the product to be displayed.
@@ -75,10 +75,10 @@ public class ProductWindow {
 
 		// Set the sizes of buttons in the window.
 		setButtonSizes();
-		
+
 		// Set the initial value of text field as 1.
 		amountOfProducts.setText("1");
-		
+
 		// Add events to the buttons and textfield.
 		ProductButtonEvents productButtonEvents = new ProductButtonEvents(this, mainWindow);
 		productButtonEvents.addEventsToObjects(productName, productPrice);
@@ -114,7 +114,7 @@ public class ProductWindow {
 	 * @param productName      - The name of the product to be displayed.
 	 * @param productPrice     - The price of the product to be displayed.
 	 * @param productContent   - The content of the product to be displayed.
-	 * @return The VBox that contains the product name, photo, and price.
+	 * @return The VBox that contains the product name, photo and price.
 	 */
 	public VBox addProductNamePhotoAndPrice(String productImagePath, String productName, double productPrice,
 			String productContent) {
@@ -146,10 +146,10 @@ public class ProductWindow {
 		Label productNameLabel = new Label(productName);
 		Label productPriceLabel = new Label(productPrice + " €");
 
-		// Create a VBox object to hold the product name, image, and price.
+		// Create a VBox object to hold the product name, image and price.
 		VBox productsVbox = new VBox();
 
-		// Set the VBox's children to the product name, image, and price.
+		// Set the VBox's children to the product name, image and price.
 		productsVbox = new VBox(5, productNameLabel, imgView, productPriceLabel);
 
 		// Center the VBox's contents.
@@ -168,7 +168,7 @@ public class ProductWindow {
 	 * 
 	 * @param productName    - a String containing the name of the product
 	 * @param productContent - a String containing the product's ingredients
-	 * @param productsVbox   - a VBox containing the product name, photo, and price
+	 * @param productsVbox   - a VBox containing the product name, photo and price
 	 * @return An HBox containing both the productsVbox and the productsInfoVbox (if
 	 *         it exists)
 	 */

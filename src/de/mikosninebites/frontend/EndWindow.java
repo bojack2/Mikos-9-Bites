@@ -42,7 +42,7 @@ public class EndWindow {
 
 	/*
 	 * Creates and sets up the "thank you" message screen, including the logo,
-	 * message, and timer. The timer is created using a Timer object, and the screen
+	 * message and timer. The timer is created using a Timer object and the screen
 	 * is displayed in the main window's primary stage.
 	 */
 	public void showEndWindow() {

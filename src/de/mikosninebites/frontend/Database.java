@@ -14,11 +14,14 @@ import java.sql.Statement;
  * @author mikolaj korzeniewski (github: bojack2)
  */
 public class Database {
+
 	/*
-	 * The URL for connecting to the database, including the IP address, port
-	 * number, and database name
+	 * This is the URL used to connect to a MySQL database server located on the
+	 * same machine (localhost) with port number 3306. The name of the database
+	 * being connected to is "mikos_9_bites". If the database does not exist, it
+	 * will be created.
 	 */
-	private final static String URL = "jdbc:mysql://127.0.0.1:3306/mikos_9_bites";
+	private final static String URL = "jdbc:mysql://localhost:3306/mikos_9_bites?createDatabaseIfNotExist=true";
 
 	/* The username used to access the database */
 	private final static String USER = "root";

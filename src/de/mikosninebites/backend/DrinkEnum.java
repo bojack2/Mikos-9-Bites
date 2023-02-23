@@ -6,7 +6,7 @@ package de.mikosninebites.backend;
  * the corresponding values for its name, price and image path passed as
  * parameters to the constructor. The constructor sets the values of the
  * instance variables for each constant. The enum also provides getter methods
- * for the name, price and image path of each hotdog.
+ * for the name, price and image path of each drink.
  * 
  * @author mikolaj korzeniewski (github: bojack2)
  *
@@ -31,13 +31,13 @@ public enum DrinkEnum {
 
 	TEA("Tea", 3.99, "file:resources/icons/drink_tea.png");
 
-	/* each drink's name */
+	/* Each drink's name */
 	private final String name;
 
-	/* each drink's price */
+	/* Each drink's price */
 	private final double price;
 
-	/* each drink's image path */
+	/* Each drink's image path */
 	private final String imagePath;
 
 	/**

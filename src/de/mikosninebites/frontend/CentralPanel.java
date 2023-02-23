@@ -21,7 +21,7 @@ import de.mikosninebites.backend.PizzaEnum;
  * The CentralPanel class represents the central panel of the ordering
  * application. It contains the UI elements for displaying a list of available
  * products, their prices and images, as well as buttons for adding them to the
- * order. The panel is organized into rows of 3 products per row, and each
+ * order. The panel is organized into rows of 3 products per row and each
  * product is displayed with its name, price and image.
  * 
  * @author mikolaj korzeniewski (github: bojack2)
@@ -75,7 +75,7 @@ public class CentralPanel {
 		Label[] favouriteFoodNames = new Label[numOfFavourites];
 		Label[] favouriteFoodPrices = new Label[numOfFavourites];
 
-		// Loop through each favourite food and set its name, price, and image.
+		// Loop through each favourite food and set its name, price and image.
 		for (int i = 0; i < numOfFavourites; i++) {
 			int drawnNumber = drawnNumbers.get(i);
 
@@ -122,7 +122,7 @@ public class CentralPanel {
 		Label[] burgersNames = new Label[burgers.length];
 		Label[] burgerPrices = new Label[burgers.length];
 
-		// Loop through each burger and set its name, price, and image.
+		// Loop through each burger and set its name, price and image.
 		for (int i = 0; i < burgers.length; i++) {
 
 			// Set the name and price of the burgers.
@@ -156,7 +156,7 @@ public class CentralPanel {
 		Label[] pizzasNames = new Label[pizzas.length];
 		Label[] pizzasPrices = new Label[pizzas.length];
 
-		// Loop through each pizza and set its name, price, and image.
+		// Loop through each pizza and set its name, price and image.
 		for (int i = 0; i < pizzas.length; i++) {
 
 			// Set the name and price of the pizzas.
@@ -259,22 +259,22 @@ public class CentralPanel {
 	 *         labels
 	 */
 	public VBox createVboxWithProductRows(Label[] productNames, Label[] productPrices) {
-		// variable to keep track of the index of the current product
+		// Variable to keep track of the index of the current product.
 		int num = 0;
 
-		// loop through each product row HBox and add three products with their
-		// respective labels and button
+		// Loop through each product row HBox and add three products with their
+		// respective labels and button.
 		for (int i = 0; i < productRows.length; i++) {
 			productRows[i].getChildren().addAll(
 					createProductWithLabels(productButtons[num], productNames[num], productPrices[num]),
 					createProductWithLabels(productButtons[num + 1], productNames[num + 1], productPrices[num + 1]),
 					createProductWithLabels(productButtons[num + 2], productNames[num + 2], productPrices[num + 2]));
 
-			// increment num by the number of products in a row
+			// Increment num by the number of products in a row
 			num += numProductsInRow;
 		}
-		// create a VBox with a spacing of 50 pixels between each row and add the rows
-		// of products to it
+		// Create a VBox with a spacing of 50 pixels between each row and add the rows
+		// of products to it.
 		VBox row = new VBox(50, productRows[0], productRows[1], productRows[2]);
 		return row;
 	}

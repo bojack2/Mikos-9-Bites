@@ -32,9 +32,11 @@ public class MenuButtonEvents {
 		this.mainWindow = mainWindow;
 	}
 
-	/*
+	/**
 	 * This method adds an event handler to an array of product buttons for the
-	 * "favourites" panel The method takes the product buttons
+	 * "favourites" panel. The method takes the product buttons
+	 * 
+	 * @param productButtons - an array of product buttons
 	 */
 	public void addEventToProductButtonsForFavourites(Button[] productButtons) {
 
@@ -60,17 +62,23 @@ public class MenuButtonEvents {
 		}
 	}
 
-	/*
+	/**
 	 * This method adds event handlers to menu buttons for changing the central
 	 * panel in the main window The method takes an array of menu buttons, the main
 	 * window, an array of product buttons, an array of product rows, and a list of
 	 * integers representing the selected favourite products
+	 * 
+	 * @param menuButtons    - an array of menu buttons
+	 * @param borderPane     - border pane to display the selected product category
+	 * @param productButtons - an array of product buttons
+	 * @param productRows    - array of HBox containers for the product buttons
 	 */
 	public void addEventToMenuBarButtons(Button[] menuButtons, BorderPane borderPane, Button[] productButtons,
 			HBox[] productRows) {
 
 		// Create a CentralPanel object
-		CentralPanel centralPanel = new CentralPanel(productButtons, productRows, mainWindow.getDrawnNumbersForFavourites());
+		CentralPanel centralPanel = new CentralPanel(productButtons, productRows,
+				mainWindow.getDrawnNumbersForFavourites());
 		// Create a new ProductWindow object
 		ProductWindow productWindow = new ProductWindow(mainWindow);
 

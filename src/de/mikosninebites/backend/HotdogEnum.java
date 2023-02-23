@@ -2,16 +2,17 @@ package de.mikosninebites.backend;
 
 /**
  * HotdogEnum that represents various types of hotdogs, each with a name, price,
- * content, and image path. Each type of hotdog is defined as a constant in
- * all-caps with the corresponding values for its name, price, content, and
- * image path passed as parameters to the constructor. The constructor sets the
- * values of the instance variables for each constant. The class also provides
- * getter methods for the name, price, content, and image path of each hotdog.
+ * content and image path. Each type of hotdog is defined as a constant in
+ * all-caps with the corresponding values for its name, price, content and image
+ * path passed as parameters to the constructor. The constructor sets the values
+ * of the instance variables for each constant. The class also provides getter
+ * methods for the name, price, content and image path of each hotdog.
  * 
  * @author mikolaj korzeniewski (github: bojack2)
  *
  */
 public enum HotdogEnum {
+
 	HOTDOG_CLASSIC("Classic Hot Dog", 2.99, "hot sausage, bun, mustard and ketchup",
 			"file:resources/icons/hotdog_classic.png"),
 
@@ -41,16 +42,16 @@ public enum HotdogEnum {
 	HOTDOG_BAJA("Baja Hot Dog", 7.99, "hot sausage, bun, chili con carne, cheddar cheese, salsa and guacamole",
 			"file:resources/icons/hotdog_baja.png");
 
-	/* each hotdog's name */
+	/* Each hotdog's name */
 	private final String name;
 
-	/* each hotdog's price */
+	/* Each hotdog's price */
 	private final double price;
 
-	/* each hotdog's content */
+	/* Each hotdog's content */
 	private final String content;
 
-	/* each hotdog's image path */
+	/* Each hotdog's image path */
 	private final String imagePath;
 
 	/**

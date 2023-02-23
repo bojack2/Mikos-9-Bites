@@ -3,9 +3,9 @@ package de.mikosninebites.frontend;
 import javafx.scene.control.Button;
 
 /**
- * This class provides event handlers for the back, cancel, and pay buttons in
+ * This class provides event handlers for the back, cancel and pay buttons in
  * the main window of a restaurant ordering system. It is responsible for
- * clearing the selected product list, displaying the payment window, and
+ * clearing the selected product list, displaying the payment window and
  * navigating back to the previous screen.
  * 
  * @author mikolaj korzeniewski (github: bojack2)
@@ -39,6 +39,7 @@ public class BackCancelPayButtonEvents {
 	public void addEventsToButtons() {
 
 		// Set up the actions for the navigation buttons.
+
 		// Cancel button - clears the selected product list and navigates back to the
 		// restaurant main scene.
 		navigationButtons[0].setOnAction(event -> {
@@ -50,6 +51,7 @@ public class BackCancelPayButtonEvents {
 			mainWindow.getPrimaryStage().setScene(mainWindow.getRestaurantMainScene());
 
 		});
+
 		// Back button - navigates back to the restaurant main scene and shows the pay
 		// box.
 		navigationButtons[1].setOnAction(event -> {
@@ -70,7 +72,7 @@ public class BackCancelPayButtonEvents {
 
 	/**
 	 * This method creates an Order object with the selected products and their
-	 * quantities, and sends it to the database.
+	 * quantities and sends it to the database.
 	 */
 	public void sendOrderToDatabase() {
 		// Creates an Order object with the selected products and their quantities.

@@ -1,16 +1,18 @@
 package de.mikosninebites.backend;
 
 /**
- * This is a class named "Drink" that defines a drink's attributes such as name and price. 
+ * This is a class named "Drink" that defines a drink's attributes such as name
+ * and price.
+ * 
  * @author mikolaj korzeniewski (github: bojack2)
  *
  */
 public class Drink {
-	
-	/* variable that stores the name of the drink */
+
+	/* Variable that stores the name of the drink */
 	private String name;
 
-	/* variable that stores the price of the drink */
+	/* Variable that stores the price of the drink */
 	private double price;
 
 	/**
@@ -21,7 +23,7 @@ public class Drink {
 		this.name = name;
 		this.price = price;
 	}
-	
+
 	/**
 	 * Returns drink's name
 	 * 
@@ -34,7 +36,7 @@ public class Drink {
 	/**
 	 * Sets drink's name
 	 * 
-	 * @param name - drink's name
+	 * @param name - drink's name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
@@ -62,5 +64,5 @@ public class Drink {
 	public String toString() {
 		return "Drink [name=" + name + ", price=" + price + "]";
 	}
-	
+
 }

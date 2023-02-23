@@ -29,10 +29,11 @@ public class Order {
 	 * Constructor for creating an Order object with the given quantity, meal, and
 	 * price.
 	 * 
-	 * @param quantity A list of integers representing the quantity of each meal
+	 * @param quantity - A list of integers representing the quantity of each meal
 	 *                 ordered
-	 * @param meal     A list of strings representing the name of each meal ordered
-	 * @param price    The total price of this order
+	 * @param meal     - A list of strings representing the name of each meal
+	 *                 ordered
+	 * @param price    - The total price of this order
 	 */
 	public Order(List<Integer> quantity, List<String> meal, double price) {
 		this.quantity = quantity;

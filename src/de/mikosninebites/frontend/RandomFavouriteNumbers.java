@@ -14,7 +14,7 @@ import de.mikosninebites.backend.FoodEnum;
  *
  */
 public class RandomFavouriteNumbers {
-	
+
 	/**
 	 * Creates a list of randomly generated integers that represent the indexes of
 	 * the user's favourite food items.

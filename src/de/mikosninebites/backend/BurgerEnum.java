@@ -2,11 +2,11 @@ package de.mikosninebites.backend;
 
 /**
  * BurgerEnum that represents various types of burgers, each with a name, price,
- * content, and image path. Each type of burger is defined as a constant in
- * all-caps with the corresponding values for its name, price, content, and
+ * content and image path. Each type of burger is defined as a constant in
+ * all-caps with the corresponding values for its name, price, content and
  * image path passed as parameters to the constructor. The constructor sets the
  * values of the instance variables for each constant. The enum also provides
- * getter methods for the name, price, content, and image path of each burger.
+ * getter methods for the name, price, content and image path of each burger.
  * 
  * @author mikolaj korzeniewski (github: bojack2)
  *
@@ -47,16 +47,16 @@ public enum BurgerEnum {
 			"bun, two beef cutlets, bacon, cheese, lettuce, tomato, onion, pickled cucumber, sauce and mustard",
 			"file:resources/icons/burger_monster.png");
 
-	/* each burger's name */
+	/* Each burger's name */
 	private final String name;
 
-	/* each burger's price */
+	/* Each burger's price */
 	private final double price;
 
-	/* each burger's content */
+	/* Each burger's content */
 	private final String content;
 
-	/* each burger's image path */
+	/* Each burger's image path */
 	private final String imagePath;
 
 	/**
