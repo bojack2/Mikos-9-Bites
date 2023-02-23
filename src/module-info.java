@@ -3,6 +3,7 @@ module restaurant {
 	requires javafx.controls;
 	requires java.desktop;
 	requires javafx.base;
-	opens de.food.mikos.restaurant.backend;
-	opens de.food.mikos.restaurant.frontend;
+	requires java.sql;
+	opens de.mikosninebites.backend;
+	opens de.mikosninebites.frontend;
 }

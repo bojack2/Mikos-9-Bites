@@ -9,7 +9,6 @@
 	-fx-text-fill: black;
 	-fx-font-weight: bold;
 }
-
 .text-field {
 	-fx-font-family:'Teko', sans-serif;
 	-fx-font-size: 16;
@@ -27,7 +26,6 @@
 	-fx-font-size: 16;
     -fx-text-fill: white;
 }
-
 .button:hover{
 	-fx-background-color: #e4f8ee;
 	-fx-text-fill: black;
@@ -96,6 +94,12 @@
 	-fx-text-fill: black;
 	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
 }
+#redButton:pressed{
+	-fx-background-color: #e4f8ee;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+	-fx-rotate: 10;
+}
 #greenButton {
 	-fx-background-color: green;
     -fx-background-radius: 30;
@@ -107,6 +111,12 @@
 	-fx-text-fill: black;
 	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
 }
+#greenButton:pressed{
+	-fx-background-color: #e4f8ee;
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+	-fx-rotate: 10;
+}	
 #addToBasketButton {
 	-fx-background-color: green;
     -fx-background-radius: 30;
@@ -117,6 +127,12 @@
 	-fx-background-color: #e4f8ee;
 	-fx-text-fill: black;
 	-fx-effect: dropshadow(three-pass-box, black, 20,0,0,9);
+}
+#thankyou{
+	-fx-font-family:'Teko', sans-serif;
+	-fx-font-size: 32;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
 }
 .tooltip {
     -fx-font-family:'Teko', sans-serif;
